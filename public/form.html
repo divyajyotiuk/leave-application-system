@@ -1,0 +1,75 @@
+</!DOCTYPE html>
+<html>
+<head>
+	<title>Leave Form</title>
+	<link rel="stylesheet" href="src/css/form-styles.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
+
+</head>
+<body>
+	
+	<div class="top-bar">
+	<h2 class="ui center aligned icon header">
+		<i class="circular file alternate icon"></i>
+		Leave Form
+	</h2>
+</div>
+	<div class="leave-form">	
+		
+<div class="ui container">
+
+	<form class="ui form" method="post" action="">
+<div class="ui labeled input">
+			<div class="ui label">
+			Subject: 
+			</div>
+			<input type="text" name="subject" id="subject">
+		</div>
+
+		<div class="ui hidden divider"></div>
+
+		<div class="field">
+			Reason of leave:
+			<textarea id="reason"></textarea>
+		</div>
+	
+		<div class="ui hidden divider"></div>
+
+	<div class="dates">
+
+		<div class="ui labeled input">
+			<div class="ui label">
+				From Date: 
+			</div>
+
+			<div class="ui left icon input">
+			<input type="date" name="from-date" id="from-date">
+			<i class="calendar outline icon"></i>
+			</div>
+		<span class="space"></span>
+			<div class="ui label">
+				To Date:
+			</div>
+
+			<div class="ui left icon input">
+			<input type="date" name="to-date" id="to-date">
+			<i class="calendar outline icon"></i>
+			</div>
+		</div>
+	</div>
+
+	<div class="ui hidden divider"></div>
+		
+		<div class="button">
+			<button class="ui primary button" id="leave-submit">Submit</button>
+		</div>
+
+			</form>
+	</div>
+
+	</div>
+<script src="src/js/application.js"></script>
+</body>
+</html>

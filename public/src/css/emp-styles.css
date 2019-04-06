@@ -1,0 +1,41 @@
+#sign-out{
+    float:right;
+    margin-right:30px;
+}
+
+.table-container{
+    margin-top:30px;
+    margin-left:100px;
+    margin-right:100px;
+}
+
+.top-bar{
+    margin-top:50px;
+}
+
+.leave-button{
+  margin-left:670px;
+}
+
+
+  .leave-form{
+
+    margin-top:70px;
+    margin-left: 100px;
+    margin-right:100px;
+    margin-bottom:50px;
+}
+
+.dates{
+
+    display:inline-block;
+}
+
+.space{
+    margin-left:50px;
+}
+
+.leave-top-bar{
+
+    margin-top:50px;
+}

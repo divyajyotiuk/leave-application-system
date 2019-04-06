@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WTL Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
+
+    <link rel="stylesheet" href="src/css/login-styles.css">
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-text">
+        <h2>Leave Application System</h2>
+        <h2>Login Here: </h2>
+      </div>
+      <div class="login-form">
+        <div class="field">
+          <label>Email</label>
+          <div class="ui input">
+            <input class="ui input" id="email-text" type="text" name="email" placeholder="Email ID" />
+          </div> 
+        </div>
+        <div class="field">
+          <label>Password</label>
+          <div class="ui input">
+            <input id="password-text" type="password" name="password" placeholder="Password" />
+          </div>
+        </div>
+        <div class="error-message"></div>
+        <button class="ui button" id="login-button" type="submit">Log In</button>
+      </div>
+    </div>
+  </body>
+  <script src="src/js/auth.js"></script>
+</html>
