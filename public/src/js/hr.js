@@ -1,5 +1,7 @@
 import Firebase from './firebase';
 
+const signOutButton = document.getElementById('sign-out');
+
 let currentUser = Firebase.auth().onAuthStateChanged((user) => {
     if (user) {
         console.log(user);
@@ -98,6 +100,15 @@ document.body.addEventListener('click', function (evt) {
      }
     
 }, false);
+
+signOutButton.addEventListener('click',()=>{
+
+    if (Firebase.auth().currentUser !== null) {
+        window.location.href = "index.html";
+        Firebase.auth().signOut();
+    }
+
+});
 
 document.body.addEventListener('click', function (evt) {
     if (evt.target.className === 'selectable cell modal') {

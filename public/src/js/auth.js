@@ -16,7 +16,7 @@ loginButton.addEventListener('click', () => {
         //login here
 
         Firebase.auth().signInWithEmailAndPassword(email.value, password.value).then((response) => {
-            alert('Welcome '+ response.user.email);
+
             if (response.user.email.includes("hr")) {
                 window.location.href = "hr.html";
             } else if(response.user.email.includes("emp")) {

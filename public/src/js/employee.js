@@ -3,10 +3,11 @@ import Firebase from './firebase';
 const signOutButton = document.getElementById('sign-out');
 const leaveButton = document.getElementById('create-leave');
 
-//database part
+
 
 let database = Firebase.database();
 
+//authentication
 let userObj = {
     userId: '',
     email: '',
@@ -19,7 +20,7 @@ Firebase.auth().onAuthStateChanged(user => {
        console.log(user)
     }
     else {
-        alert("no user Id found");
+       console.log("no user Id found");
     }
 })
 
