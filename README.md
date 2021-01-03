@@ -1,15 +1,13 @@
-# wtl-project
+# Leave Application System
 
-to run do the following:
+### Create a firebase web project and add the config
 
-- cd public
-- parcel *.html
-- once it builds, then just do ctrl+C
-- do firebase serve
 
-So then you could test your code
+To run do the following:
 
-if you face problems once you pull this repo again then use this command: ```firebase use --add```
-add your alias and you can start working.
+Open 2 terminals(tabs also fine):
+- first `npm install`
+- run command `npm run start` on one (don't forget to set the env vars)
+- run command `npm run parcel-dev` on another (it's a watcher for you to tweak with the app and see your changes come live)
 
 Cheerio!
