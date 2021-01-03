@@ -9,7 +9,7 @@
     "parcel-dev": "parcel watch public/*.html"
   },
   "dependencies": {
-    "firebase": "^5.9.2"
+    "firebase": "^8.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
