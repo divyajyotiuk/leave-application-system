@@ -56,4 +56,9 @@ body {
   width: 410px;
   background-color: royalblue;
   color: white;
+  margin-bottom: 10px;
+}
+
+.bottom-link{
+  text-align: center;
 }
