@@ -17,14 +17,12 @@ Firebase.auth().onAuthStateChanged(user => {
     if(user){
         userObj.userId = user.uid
         userObj.email = user.email
-       console.log(user)
+       console.log(userObj)
     }
     else {
        console.log("no user Id found");
     }
 })
-
-console.log(userObj)
 
 function snapshotToArray(snapshot) {
     var returnArr = [];
@@ -128,7 +126,7 @@ function writeUserData(username,uid,subject, reason, fromDate,toDate) {
 
   return database.ref().update(requests);
   
-   }
+}
 
 submitButton.addEventListener('click', () => {
 
